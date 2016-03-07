@@ -1,2 +1,1 @@
-# a-walk-in-python
-A Walk in Python
+# A Walk in Python #
