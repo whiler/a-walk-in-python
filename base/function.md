@@ -37,7 +37,9 @@ def f(x):
 In [1]: def f(x):
    ...:     return x * 5 + 1
    ...:
+
 In [2]: y = f(5)
+
 In [3]: y
 Out[3]: 26
 ```
