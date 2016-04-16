@@ -34,12 +34,39 @@ def f(x):
 在 Python 中使用这个函数 ``` y = f(5) ``` 。
 
 ```
-In [1]: def f(x):
-   ...:     return x * 5 + 1
-   ...:
+def f(x):
+    return x * 5 + 1
 
-In [2]: y = f(5)
-
-In [3]: y
-Out[3]: 26
+y = f(5)
 ```
+
+在 Python 中定义用 def 关键字定义一个函数，函数名可以是任意合法的变量名，接着是前后括号括起来的参数列表。
+函数的逻辑实现代码相对定义函数的那一行进行缩进。
+
+例如，按照北京市出租车自 2013 年 6 月 10 日起执行的计费标准，计算出租车费用的函数：
+```
+def taxi(distance):
+	extra ＝ 1.0
+	starting = 13.0
+	price = 2.3
+	threshold = 3000.0
+	fare = starting + extra
+	if distance > threshold:
+		delta = (distance - threshold) / 1000.0
+		delta = round(delta)
+		fare = fare + delta * price
+	return round(fare)
+```
+def taxi(distance) 开始定义了一个函数名为 taxi 输入参数为 distance 的函数；
+extra ＝ 1.0 定义了燃油附加费；
+starting = 13.0 定义了起步价；
+price = 2.3 定义了每公里 2.3 元人民币；
+threshold = 3000.0 定义了起步价可以坐的距离，3公里；
+fare = starting + extra 表示了坐上出租车后便产生的 起步价 和 油附加费 的费用；
+if distance > 3000.0 判断行驶距离是否超过3公里；
+delta = (distance - 3000.0) / 1000.0 计算超出3公里后的距离；
+delta = round(delta) 表示对距离四舍五入；
+fare = fare + delta * price 表示除了之前已经产生的费用，还需要加上超出3公里后每公里2.3元的费用；
+return round(fare) 表示，最后的结算以元为单位，元以下四舍五入。
+
+其中 round 是由 Python 提供的四舍五入计算函数，Python 还提供了很多其他的函数，比如 print 函数可以输出任何数据。

@@ -8,18 +8,18 @@
 
 引入 time 模块并使用 time 模块中的 time 函数，得到当前时刻的时间戳。
 ```
-In [3]: import time
+import time
 
-In [4]: time.time()
-Out[4]: 1460624973.709059
+timestamp = time.time()
+print(timestamp)
 ```
 
 直接从 time 模块中引入 time 函数，得到当前的时间戳。
 ```
-In [5]: from time import time
+from time import time
 
-In [6]: time()
-Out[6]: 1460625086.008966
+timestamp = time()
+print(timestamp)
 ```
 
 关于时间，准确地说是时刻，在编程中一般用时间戳（timestamp）表示。
