@@ -3,13 +3,13 @@
 1. 序言
 2. 编程
 3. Python
-4. 基础
-	1. 数据类型
-	2. 控制语句
-	3. 函数
-	4. 面向对象
-	5. 模块和包
-	6. 错误和异常
+4. [基础](base/README.md)
+	1. [数据类型](base/datatype.md)
+	2. [控制语句](base/flow.md)
+	3. [函数](base/function.md)
+	4. [面向对象](base/object.md)
+	5. [模块和包](base/package.md)
+	6. [错误和异常](base/error.md)
 5. 数据
 	1. 简单计算
 	2. 矩阵计算
