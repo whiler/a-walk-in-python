@@ -1,5 +1,6 @@
 ## 控制语句 ##
 控制语句是编程的逻辑基础，Python 中的控制语句有 if , for 和 while 。
+Python 中，从 : 开始，代码行用同样的缩进表示同一逻辑层。
 
 ### if ###
 假如满足某项条件就执行某项操作，如：
@@ -26,5 +27,3 @@ for friend in friends:
 while live:
 	struggle
 ```
-
-Python 中，从 : 开始，代码行用同样的缩进表示同一逻辑层。

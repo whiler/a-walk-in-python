@@ -15,14 +15,21 @@ class Person:
 		self.gender = gender
 	
 	def eat(self, food):
-		pass
+		print(self.name + '正在吃' + food)
 	
 	def drink(self, water):
-		pass
+		print(self.name + '正在喝' + water)
+
+zhang = Person('张三', 37, '男')
+zhang.eat('芝士汉堡')
 ````
 
 Python 中，通过 class 关键字来定义一个类， Person 是类的名字；
 
 def __init__(self, name, age, gender) 这个函数是定义了这个 Person 类的封装（构建）方法，通过 name ， age ， gender 来封装一个 Person 类；
 
-def eat(self, food) 和 def drink(self, water) 分别定义了这个 Person 类的 eat 方法和 drink 方法。
+def eat(self, food) 和 def drink(self, water) 分别定义了这个 Person 类的 eat 方法和 drink 方法；
+
+zhang = Person('李四', 37, '男') 创建了一个 Person 类的实例对象；
+
+zhang.eat('芝士汉堡') 调用了这个对象的 eat 方法。
