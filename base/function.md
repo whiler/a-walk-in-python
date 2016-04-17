@@ -22,14 +22,14 @@ $$
 
 在数学中使用这个函数 $ y = f(5) = 26 $ 。
 
-在 Python 中定义一个一元一次函数。
+在 Python 中定义一个一元一次函数：
 
 ```
 def f(x):
 	return 5 * x + 1
 ```
 
-在 Python 中使用这个函数 ``` y = f(5) ``` 。
+在 Python 中使用这个函数：
 
 ```
 y = f(5)
@@ -73,5 +73,6 @@ delta = round(delta) 表示对距离四舍五入；
 fare = fare + delta * price 表示除了之前已经产生的费用，还需要加上超出3公里后每公里2.3元的费用；
 
 return round(fare) 表示，最后的结算以元为单位，元以下四舍五入。
+
 
 其中 round 是由 Python 提供的四舍五入计算函数，Python 还提供了很多其他的函数，比如 print 函数可以输出任何数据。

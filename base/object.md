@@ -6,6 +6,7 @@
 
 ### Python 中的面向对象 ###
 Python 从设计之初就是一门面向对象的语言，在 Python 中任何东西都是对象。
+
 从一个“人”的抽象类开始：
 ```
 class Person:
@@ -20,7 +21,7 @@ class Person:
 	def drink(self, water):
 		print(self.name + '正在喝' + water)
 
-zhang = Person('张三', 37, '男')
+zhang = Person('张三', 24, '男')
 zhang.eat('芝士汉堡')
 ````
 
