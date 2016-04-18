@@ -8,6 +8,7 @@
 Python 从设计之初就是一门面向对象的语言，在 Python 中任何东西都是对象。
 
 从一个“人”的抽象类开始：
+
 ```
 class Person:
 	def __init__(self, name, age, gender):
@@ -25,12 +26,12 @@ zhang = Person('张三', 24, '男')
 zhang.eat('芝士汉堡')
 ````
 
-Python 中，通过 class 关键字来定义一个类， Person 是类的名字；
+Python 中，通过 _class_ 关键字来定义一个类， _Person_ 是类的名字；
 
-def __init__(self, name, age, gender) 这个函数是定义了这个 Person 类的封装（构建）方法，通过 name ， age ， gender 来封装一个 Person 类；
+```def __init__(self, name, age, gender)``` 这个函数定义了 _Person_ 类的封装（构建）方法，通过 _name_ ， _age_ ， _gender_ 来构建一个 _Person_ 类的对象；
 
-def eat(self, food) 和 def drink(self, water) 分别定义了这个 Person 类的 eat 方法和 drink 方法；
+```def eat(self, food)``` 和 ```def drink(self, water)``` 分别定义了 _Person_ 类的 _eat_ 方法和 _drink_ 方法；
 
-zhang = Person('李四', 37, '男') 创建了一个 Person 类的实例对象；
+```zhang = Person('张三', 24, '男')``` 创建了一个 _Person_ 类的实例对象；
 
-zhang.eat('芝士汉堡') 调用了这个对象的 eat 方法。
+```zhang.eat('芝士汉堡')``` 调用了这个对象的 _eat_ 方法。
