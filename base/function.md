@@ -17,7 +17,7 @@
 在数学中定义一个一元一次函数。
 
 $$
-	y = f(x) = 5 * x + 1
+    y = f(x) = 5 * x + 1
 $$
 
 在数学中使用这个函数 $ y = f(5) = 26 $ 。
@@ -26,7 +26,7 @@ $$
 
 ```
 def f(x):
-	return 5 * x + 1
+    return 5 * x + 1
 ```
 
 在 Python 中使用这个函数：
@@ -42,16 +42,16 @@ y = f(5)
 
 ```
 def taxi(distance):
-	extra ＝ 1.0
-	starting = 13.0
-	price = 2.3
-	threshold = 3000.0
-	fare = starting + extra
-	if distance > threshold:
-		delta = (distance - threshold) / 1000.0
-		delta = round(delta)
-		fare = fare + delta * price
-	return round(fare)
+    extra ＝ 1.0
+    starting = 13.0
+    price = 2.3
+    threshold = 3000.0
+    fare = starting + extra
+    if distance > threshold:
+        delta = (distance - threshold) / 1000.0
+        delta = round(delta)
+        fare = fare + delta * price
+    return round(fare)
 ```
 
 ```def taxi(distance)``` 开始定义了一个函数名为 _taxi_ 输入参数为 _distance_ 的函数；

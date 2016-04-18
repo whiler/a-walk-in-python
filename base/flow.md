@@ -13,7 +13,7 @@ Python 中，从 _:_ 开始，代码行用同样的缩进表示同一逻辑层�
 ```
 买一斤包子
 if 看到卖西瓜的:
-	买一个
+    买一个
 ```
 
 ### for ###
@@ -23,7 +23,7 @@ if 看到卖西瓜的:
 
 ```
 for friend in friends:
-	say hello to friend
+    say hello to friend
 ```
 
 
@@ -34,5 +34,5 @@ for friend in friends:
 
 ```
 while live:
-	struggle
+    struggle
 ```

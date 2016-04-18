@@ -11,16 +11,16 @@ Python 从设计之初就是一门面向对象的语言，在 Python 中任何�
 
 ```
 class Person:
-	def __init__(self, name, age, gender):
-		self.name = name
-		self.age = age
-		self.gender = gender
-	
-	def eat(self, food):
-		print(self.name + '正在吃' + food)
-	
-	def drink(self, water):
-		print(self.name + '正在喝' + water)
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+    
+    def eat(self, food):
+        print(self.name + '正在吃' + food)
+    
+    def drink(self, water):
+        print(self.name + '正在喝' + water)
 
 zhang = Person('张三', 24, '男')
 zhang.eat('芝士汉堡')

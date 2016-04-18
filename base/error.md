@@ -11,17 +11,18 @@
 会看到错误信息 _ZeroDivisionError: integer division or modulo by zero_ ，这是一个除零错误，数学计算中，除数不能为零。
 
 为了捕获这个除零错误我们可以这样做：
+
 ```
 try:
-	4 / 0
+    4 / 0
 except ZeroDivisionError:
-	print('发现除零错误')
+    print('发现除零错误')
 except:
-	print('发现其他未知错误')
+    print('发现其他未知错误')
 else:
-	print('一切正常，什么错误都没有发生')
+    print('一切正常，什么错误都没有发生')
 finally:
-	print('代码执行结束')
+    print('代码执行结束')
 ```
 
 其中 _try_ 和 _except_ 将需要捕获异常的代码段包裹起来，通过多个 _except_ 依次捕获可能的异常和错误，捕获到错误后执行对应的代码段，最后，不论是否捕获到异常都执行 _finally_ 中的代码。
