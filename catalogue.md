@@ -2,7 +2,7 @@
 
 1. 序言
 2. 编程
-3. Python
+3. [Python](python.md)
 4. [基础](base/README.md)
 	1. [注释](base/comment.md)
 	2. [规范](base/style.md)
