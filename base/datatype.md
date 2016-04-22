@@ -131,7 +131,7 @@ shopping_list.remove('牛奶')
 例如：
 
 ```
-dictionary = {'cat': 'ねこ', 'temple': 'お寺'}
+dictionary = {'cat': '猫', 'temple': '寺庙'}
 ```
 
 
