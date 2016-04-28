@@ -43,7 +43,7 @@ Python 通过 _PyPI_ (the Python Package Index) 提供第三方包检索服务�
 python get-pip.py
 ```
 
-#### 安装第三方包 ####
+#### 管理第三方包 ####
 安装好 _pip_ 后，可以通过 _pip_ 管理第三方包：搜索、安装、更新、卸载。
 
 搜索名字中包含 _xml_ 的第三方包：
