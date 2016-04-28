@@ -28,3 +28,44 @@ print(timestamp)
 
 关于时间，准确地说是时刻，在编程中一般用时间戳（timestamp）表示。
 时间戳是从格林威治时间公元 1970 年 01 月 01 日 00 时 00 分 00 秒起到一个时刻的总秒数，最开始的时刻记为 0.0 。
+
+### 第三方包 ###
+Python 自带了很多常用的基础模块，比如提到过的 _time_ 、 _datetime_ 、 _re_ 。
+当然，Python 也允许安装第三方包来扩展 Python 的处理能力，如同智能手机允许安装其他应用一样。
+
+和各个手机应用市场（app store）一样，Python 通过 _PyPI_ (the Python Package Index) 提供第三方包检索服务，用 _pip_ 命令安装第三方包。
+
+#### 安装 pip ####
+从 Python 3.4 起，Python 已经自带 _pip_ 了。
+若没有安装，可以先下载 [get-pip.py](https://bootstrap.pypa.io/get-pip.py) ，然后用下面的命令安装：
+
+```
+python get-pip.py
+```
+
+#### 安装第三方包 ####
+安装好 _pip_ 后，可以通过 _pip_ 管理第三方包：搜索、安装、更新、卸载。
+
+搜索名字中包含 _xml_ 的第三方包：
+
+````
+pip search xml
+````
+
+安装 _lxml_ 和 _requests_ 这两个第三方包：
+
+```
+pip install lxml requests
+```
+
+更新 _requests_ 包：
+
+```
+pip install --upgrade requests
+```
+
+卸载 _requests_ 包：
+
+```
+pip uninstall requests
+```
