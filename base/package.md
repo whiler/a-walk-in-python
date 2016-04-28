@@ -33,7 +33,7 @@ print(timestamp)
 Python 自带了很多常用的基础模块，比如提到过的 _time_ 、 _datetime_ 、 _re_ 。
 当然，Python 也允许安装第三方包来扩展 Python 的处理能力，如同智能手机允许安装其他应用一样。
 
-和各个手机应用市场（app store）一样，Python 通过 _PyPI_ (the Python Package Index) 提供第三方包检索服务，用 _pip_ 命令安装第三方包。
+Python 通过 _PyPI_ (the Python Package Index) 提供第三方包检索服务，用 _pip_ 命令安装第三方包。
 
 #### 安装 pip ####
 从 Python 3.4 起，Python 已经自带 _pip_ 了。
