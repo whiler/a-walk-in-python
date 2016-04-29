@@ -14,11 +14,15 @@
 	8. [模块和包](base/package.md)
 	9. [错误和异常](base/error.md)
 	10. [小试牛刀](base/doit.md)
-5. 数据
+5. [网络爬虫](spider/README.md)
+	1. [简介](spider/introduction.md)
+	2. [HTTP](spider/http.md)
+	3. [HTML](spider/html.md)
+	4. [CSSPath](spider/csspath.md)
+	5. [北京市住宅销售价格指数](spider/housing.md)
+6. 数据
 	1. 简单计算
 	2. 矩阵计算
 	3. 数理统计
 	4. sqlite3
-6. [网络](network/README.md)
-	1. [爬虫](network/spider.md)
-	2. [WEB](network/web.md)
+	5. 数据可视化

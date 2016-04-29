@@ -1,5 +1,5 @@
-## WEB ##
-在访问 [http://www.bing.com/](http://www.bing.com/) 的时候，计算机完成了一系列复杂的网络通信。
+## HTTP ##
+在访问 [http://www.bing.com/](http://www.bing.com/) 的时候，计算机完成了一系列复杂的 _HTTP_ 网络通信。
 Python 可以通过 _urllib2_ 模块简单地模拟这个过程。
 
 ```
@@ -39,4 +39,5 @@ def download(url)
 
 ```
 content = download('https://www.douban.com/')
+print(content)
 ```
