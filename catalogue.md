@@ -18,7 +18,7 @@
 	1. [简介](spider/introduction.md)
 	2. [HTTP](spider/http.md)
 	3. [HTML](spider/html.md)
-	4. [CSSPath](spider/csspath.md)
+	4. [CSS Selector](spider/cssselector.md)
 	5. [北京市住宅销售价格指数](spider/housing.md)
 6. 数据
 	1. 简单计算

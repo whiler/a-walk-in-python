@@ -25,7 +25,7 @@ _HTML_ 文档中内容繁多，我们要做的是从 _HTML_ 中找到链接地�
 解析 _HTML_ 源文件，可以通过第三方 _lxml_ 包的 _html_ 模块完成。
 _html_ 模块的 _fromstring_ 函数可以将 _HTML_ 解析成一个节点树。
 每一对闭合的标签构成一个节点，各个节点按照 _HTML_ 源码中的层级关系组成一棵节点树。
-通过 _html_ 模块构建的节点对象有一个 _cssselect_ 方法，可以通过 _CSSPath_ 搜索满足条件的所有子节点。
+通过 _html_ 模块构建的节点对象有一个 _cssselect_ 方法，可以通过 _CSS Selector_ 搜索满足条件的所有子节点。
 
 安装 _lxml_ 第三方包：
 
@@ -40,9 +40,9 @@ from lxml import html
 
 def extract_urls(content):
     urls = list()
-    csspath = 'a'
+    selector = 'a'
     root = html.fromstring(content)
-    nodes = root.cssselect(csspath)
+    nodes = root.cssselect(selector)
     for node in nodes:
         url = node.attrib.get('href')
         if url:
@@ -52,11 +52,11 @@ def extract_urls(content):
 
 ```urls = list()``` 初始化一个空的列表，用于保存找到的链接地址；
 
-```csspath = 'a'``` _CSSPath_ 是 ```a``` ；
+```selector = 'a'``` _CSS Selector_ 是 ```a``` ；
 
 ```root = html.fromstring(content)``` 用 _html_ 模块的 _fromstring_ 函数，解析 _HTML_ 源码，找到 _HTML_ 根节点；
 
-```nodes = root.cssselect(csspath)``` 用根节点的 _cssselect_ 方法，找到所有的 _a_ 标签节点；
+```nodes = root.cssselect(selector)``` 用根节点的 _cssselect_ 方法，找到所有的 _a_ 标签节点；
 
 ```url = node.attrib.get('href')``` 从节点的属性中获得 _href_ 属性值；
 
