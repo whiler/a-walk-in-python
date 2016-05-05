@@ -28,7 +28,7 @@ print(content)
 ```
 import urllib2
 
-def download(url)
+def download(url):
     connection = urllib2.urlopen(url)
     content = connection.read()
     connection.close()

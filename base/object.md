@@ -32,7 +32,7 @@ li.drink('白酒')
 
 Python 中，通过 _class_ 关键字来定义一个类， _Person_ 是类的名字；
 
-```class Person(object):``` 定义一个 _Person_ 类，继承自 _object_ 类。 _object_ 类是所有简单类的根源，如同
+```class Person(object)``` 定义一个 _Person_ 类，继承自 _object_ 类。 _object_ 类是所有简单类的根源，如同
 
 > 太极生两仪，两仪生四象。
 
@@ -67,9 +67,9 @@ zhang.drink('白酒')
 zhang.wrok()
 ```
 
-```class Staff(Person):``` 定义一个 _Staff_ 类，继承自 _Person_ 类；
+```class Staff(Person)``` 定义一个 _Staff_ 类，继承自 _Person_ 类；
 
-```def work(self):``` 定义了一个 _work_ 方法；
+```def work(self)``` 定义了一个 _work_ 方法；
 
 ```zhang = Staff('张三', 24, '男')``` 创建了一个 _Staff_ 类的实例对象。
 因为没有重写构建方法 _\_\_init\_\__ ，所以直接调用父类 _Person_ 的构建方法完成创建过程。
@@ -93,8 +93,8 @@ zhang = Engineer('张三', 24, '男')
 zhang.wrok()
 ```
 
-```class Engineer(Staff):``` 定义了一个 _Engineer_ 类，继承自 _Staff_ 类；
+```class Engineer(Staff)``` 定义了一个 _Engineer_ 类，继承自 _Staff_ 类；
 
-```def work(self):``` 定义一个 _work_ 方法，它覆盖了父类 _Staff_ 的 _work_ 方法；
+```def work(self)``` 定义一个 _work_ 方法，它覆盖了父类 _Staff_ 的 _work_ 方法；
 
 ```zhang.wrok()``` 调用了对象的 _work_ 方法，将输出 _create new BUG_ 。
