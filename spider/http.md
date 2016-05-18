@@ -15,7 +15,7 @@ connection.close()
 print(content)
 ```
 
-其中 ```connection = urllib2.urlopen(url)``` 通过调用 _urllib2_ 模块提供的 _urlopen_ 函数，建立了一个与 _url_ 的连接对象 _connection_ ；
+其中 ```connection = urllib2.urlopen(url)``` 通过调用 _urllib2_ 模块提供的 _urlopen_ 函数，建立了一个 _url_ 的连接对象 _connection_ ；
 
 ```content = connection.read()``` 从 _connection_ 中读取内容；
 
