@@ -93,7 +93,7 @@ class Spider(object):
             raw = connection.read()
         except urllib.error.HTTPError:
             # 若发生 HTTPError 错误，记下连接地址
-            msg = 'download [' + url + '] raised urllib2.HTTPError, skiped'
+            msg = 'download [' + url + '] raised urllib.request.HTTPError, skiped'
             logging.exception(msg)
         except socket.timeout:
             # 若发生超时异常，记下连接地址
