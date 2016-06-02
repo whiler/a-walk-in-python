@@ -12,6 +12,7 @@ Mac (OS X 10.11.5) 电脑已经预装 Python 。
 1. 调出 _Spotlight_
 2. 输入 _terminal_
 3. 在 _Terminal_ 中输入 _python3_ ，回车即可
+4. 按 <kbd>CONTROL</kbd>+<kbd>D</kbd> 退出
 
 ```
 Python 3.5.1 (default, Dec 30 2015, 22:54:58)
@@ -20,6 +21,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-4. 按 <kbd>CONTROL</kbd>+<bkd>D</kbd> 退出
 
 若需要执行一个 Python 脚本 _script.py_ ，在 _Terminal_ 中输入 ```python3 script.py``` 即可。
