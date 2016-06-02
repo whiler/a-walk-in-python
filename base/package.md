@@ -40,7 +40,7 @@ Python 通过 _PyPI_ (the Python Package Index) 提供第三方包检索服务�
 若没有安装，可以先下载 [get-pip.py](https://bootstrap.pypa.io/get-pip.py) ，然后用下面的命令安装：
 
 ```
-python get-pip.py
+python3 get-pip.py
 ```
 
 #### 管理第三方包 ####
@@ -49,23 +49,23 @@ python get-pip.py
 搜索名字中包含 _xml_ 的第三方包：
 
 ````
-pip search xml
+pip3 search xml
 ````
 
 安装 _lxml_ 和 _requests_ 这两个第三方包：
 
 ```
-pip install lxml requests
+pip3 install lxml requests
 ```
 
 更新 _requests_ 包：
 
 ```
-pip install --upgrade requests
+pip3 install --upgrade requests
 ```
 
 卸载 _requests_ 包：
 
 ```
-pip uninstall requests
+pip3 uninstall requests
 ```

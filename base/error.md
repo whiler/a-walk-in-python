@@ -17,7 +17,7 @@ try:
     4 / 0
 except ZeroDivisionError:
     print('发现除零错误')
-except:
+except Exception:
     print('发现其他未知错误')
 else:
     print('一切正常，什么错误都没有发生')
@@ -33,7 +33,7 @@ finally:
 
 ```except ZeroDivisionError:``` 表示仅仅捕获除零错误 (ZeroDivisionError)；
 
-```except:``` 表示捕获所有的错误；
+```except Exception:``` 表示捕获所有的错误；
 
 ```else:``` 表示没有错误时执行的代码段；
 
