@@ -21,8 +21,8 @@
 	4. [CSS Selector](spider/cssselector.md)
 	5. [小试牛刀](spider/doit.md)
 6. 数据
-	1. 简单计算
-	2. 矩阵计算
-	3. 数理统计
-	4. sqlite3
-	5. 数据可视化
+	1. file
+	2. csv
+	3. excel
+	4. sqlite
+	5. 其他

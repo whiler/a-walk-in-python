@@ -77,4 +77,4 @@ def taxi(distance):
 ```return round(fare)``` 表示，最后的结算以元为单位，元以下四舍五入。
 
 
-其中 _round_ 是由 Python 提供的四舍五入计算函数，Python 还提供了很多其他的函数，比如 _print_ 函数可以输出任何数据。
+其中 [round](https://docs.python.org/3.5/library/functions.html#round) 是由 Python 提供的四舍五入计算函数，Python 还提供了很多其他的函数，比如 [print](https://docs.python.org/3.5/library/functions.html#print) 函数可以输出任何数据。
