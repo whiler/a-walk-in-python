@@ -25,4 +25,5 @@
 	2. [csv](data/csv.md)
 	3. [excel](data/excel.md)
 	4. [sqlite](data/sqlite.md)
-	5. [其他](data/other.md)
+	5. [sql](data/sql.md)
+	6. [其他](data/other.md)
