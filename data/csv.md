@@ -45,19 +45,6 @@
 ### Python 处理 csv 文件 ###
 Python 提供了 [csv](https://docs.python.org/3.5/library/csv.html) 模块来处理 csv 文件。
 
-csv 模块的 [reader](https://docs.python.org/3.5/library/csv.html#csv.reader) 函数通过文件对象，构建一个按照 csv 格式解析数据的阅读器（ Reader ）。
-阅读器解析得到的每一行数据是字符串列表，若某一个列是数值数据，需要将它转换成数值。
-
-```
-import csv
-
-fp = open('620702104.csv', 'r')
-reader = csv.reader(fp)  # 构建一个 csv 阅读器
-for row in reader:  # 逐行读取 csv 数据
-    print(row)
-fp.close()
-```
-
 csv 模块的 [writer](https://docs.python.org/3.5/library/csv.html#csv.writer) 函数通过文件对象，构建一个按照 csv 格式编码数据的 Writer 。
 
 ```
@@ -84,5 +71,18 @@ fp = open('620702104.csv', 'w')  # 以写入模式打开一个文件
 writer = csv.writer(fp)  # 构建一个 csv Writer
 for row in rows:  # 遍历每一行数据
     writer.writerow(row)  # 写入一行数据
+fp.close()
+```
+
+csv 模块的 [reader](https://docs.python.org/3.5/library/csv.html#csv.reader) 函数通过文件对象，构建一个按照 csv 格式解析数据的阅读器（ Reader ）。
+阅读器解析得到的每一行数据是字符串列表，若某一个列是数值数据，需要将它转换成数值。
+
+```
+import csv
+
+fp = open('620702104.csv', 'r')
+reader = csv.reader(fp)  # 构建一个 csv 阅读器
+for row in reader:  # 逐行读取 csv 数据
+    print(row)
 fp.close()
 ```
