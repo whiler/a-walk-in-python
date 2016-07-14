@@ -2,9 +2,15 @@
 `XXX.doc` 、 `XXX.jpg` 、 `XXX.txt` 、 `XXX.exe` 这些是都是文件。
 文件的本质是数据保存到存储介质的产物。
 Python 提供了 [open](https://docs.python.org/3.5/library/functions.html#open) 函数用于打开文件。
-默认情况下， open 函数将文件视为普通文本文件以只读方式打开。
+open 函数打开一个文件，返回一个文件对象，文件对象提供基本的 read 、 write 、 close 方法来操作文件。
+
+- read ，从文件中读取内容
+- write ，将数据写入文件
+- close ，关闭文件
+
 
 ### 文本文件 ###
+默认情况下， open 函数将文件视为普通文本文件以只读方式打开。
 文本文件的特点是文件内容全是字符，字符的顺序和数据的顺序一一对应。
 
 ```
