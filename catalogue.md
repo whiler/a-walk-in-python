@@ -20,9 +20,9 @@
 	3. [HTML](spider/html.md)
 	4. [CSS Selector](spider/cssselector.md)
 	5. [小试牛刀](spider/doit.md)
-6. 数据
-	1. file
-	2. csv
-	3. excel
-	4. sqlite
-	5. 其他
+6. [数据存储](data/README.md)
+	1. [file](data/file.md)
+	2. [csv](data/csv.md)
+	3. [excel](data/excel.md)
+	4. [sqlite](data/sqlite.md)
+	5. [其他](data/other.md)
