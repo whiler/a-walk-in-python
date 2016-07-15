@@ -15,10 +15,10 @@ CREATE TABLE division (
 );
 ```
 
-在 division 表中添加一个 time 字段：
+在 division 表中添加一个 created 字段：
 
 ```
-ALTER TABLE division ADD time INTEGER;
+ALTER TABLE division ADD created INTEGER;
 ```
 
 将 division 表截断（清空）：
@@ -38,13 +38,13 @@ SQL 通过数据操作语言（ DML ）管理数据，主要包括插入（ INSE
 向 division 表中插入一条数据：
 
 ```
-INSERT INTO division (code, name, time) VALUES (620702104203, '敬依村委会', 1468492389);
+INSERT INTO division (code, name, created) VALUES (620702104203, '敬依村委会', 1468492389);
 ```
 
-将 division 表中 id 为 1 的数据中的 time 字段更新成 1468492504 ：
+将 division 表中 id 为 1 的数据中的 created 字段更新成 1468492504 ：
 
 ```
-UPDATE division SET time = 1468492504 WHERE id = 1;
+UPDATE division SET created = 1468492504 WHERE id = 1;
 ```
 
 从 division 表中删除 id 为 1 的一条数据：
@@ -55,3 +55,15 @@ DELETE FROM division WHERE id = 1;
 
 ### 查询数据 ###
 查询数据是 SQL 中最常见的操作。
+
+查询某地区自 2000 年以来的犯罪事件总数：
+
+```
+SELECT
+    division.name, COUNT(1)
+FROM division
+JOIN crime ON (crime.division = division.code)
+WHERE division.code > 110000000000 AND division.code < 120000000000
+    AND crime.created >= 946656000
+GROUP BY division.code;
+```
