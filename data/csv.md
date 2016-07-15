@@ -48,6 +48,10 @@ Python 提供了 [csv](https://docs.python.org/3.5/library/csv.html) 模块来�
 csv 模块的 [writer](https://docs.python.org/3.5/library/csv.html#csv.writer) 函数通过文件对象，构建一个按照 csv 格式编码数据的 Writer 。
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import csv
 
 rows = [
@@ -78,6 +82,10 @@ csv 模块的 [reader](https://docs.python.org/3.5/library/csv.html#csv.reader) 
 阅读器解析得到的每一行数据是字符串列表，若某一个列是数值数据，需要将它转换成数值。
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import csv
 
 fp = open('620702104.csv', 'r')

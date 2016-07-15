@@ -7,6 +7,10 @@ Python 提供了 [sqlite3](https://docs.python.org/3.5/library/sqlite3.html) 模
 ### SQLite 建表 ###
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import sqlite3
 
 conn = sqlite3.connect('demo.db')  # 创建连接
@@ -26,6 +30,10 @@ conn.close()  # 关闭连接
 ### 数据导入 SQLite ###
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import sqlite3
 
 rows = [
@@ -57,6 +65,10 @@ conn.close()
 ### 从 SQLite 中读取数据 ###
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 import sqlite3
 
 conn = sqlite3.connect('demo.db')

@@ -1,7 +1,7 @@
 ## 目录 ##
 
-1. 序言
-2. 编程
+1. [序言](preface.md)
+2. [编程](programming.md)
 3. [Python](python.md)
 4. [基础](base/README.md)
 	1. [安装 Python](base/installation.md)

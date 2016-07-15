@@ -100,7 +100,7 @@ def crawler(url):
         crawler(url)
 ```
 
-其中 _download_ 函数通过链接地址下载网页内容， _extract_urls_ 从网页内容中解析链接地址， _extract_something_ 从网页中解析感兴趣的内容， _url_filter_ 过滤解析得到的链接地址，控制爬取范围。
+其中 download 函数通过链接地址下载网页内容， extract_urls 从网页内容中解析链接地址， extract_something 从网页中解析感兴趣的内容， url_filter 过滤解析得到的链接地址，控制爬取范围。
 实现这些函数就可以实现一个简单的网络爬虫了。
 
-_download_ 函数将涉及 _HTTP_ 网络通信，_extract_urls_ 和 _extract_something_ 涉及简单的 _HTML_ 文本处理，这些都会在接下来的内容中慢慢的讲。
+download 函数将涉及 HTTP 网络通信，extract_urls 和 extract_something 涉及简单的 HTML 文本处理，这些都会在接下来的内容中慢慢的讲。

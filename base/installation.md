@@ -9,9 +9,9 @@ Mac (OS X 10.11.5) 电脑已经预装 Python 。
 ### Mac 用户使用 Python ###
 使用 Python 的步骤：
 
-1. 调出 _Spotlight_
-2. 输入 _terminal_
-3. 在 _Terminal_ 中输入 _python3_ ，回车即可
+1. 调出 Spotlight
+2. 输入 terminal
+3. 在 Terminal 中输入 python3 ，回车即可
 4. 按 <kbd>CONTROL</kbd>+<kbd>D</kbd> 退出
 
 ```
@@ -22,4 +22,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
-若需要执行一个 Python 脚本 _script.py_ ，在 _Terminal_ 中输入 ```python3 script.py``` 即可。
+若需要执行一个 Python 脚本 script.py ，在 Terminal 中输入 ```python3 script.py``` 即可。

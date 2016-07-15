@@ -6,6 +6,10 @@ Python 没有自带处理 Excel 文件的模块，需要安装第三方包 [open
 ### 数据写入 Excel ###
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 from openpyxl import Workbook
 
 title = '乌江镇'
@@ -42,6 +46,10 @@ wb.save('demo.xlsx')  # 保存为 demo.xlsx
 ### 读取 Excel ###
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 from openpyxl import load_workbook
 
 wb = load_workbook('demo.xlsx')  # 从文件中加载 Workbook

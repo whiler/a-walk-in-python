@@ -1,5 +1,5 @@
 ## 文件 ##
-`XXX.doc` 、 `XXX.jpg` 、 `XXX.txt` 、 `XXX.exe` 这些是都是文件。
+_XXX.doc_ 、 _XXX.jpg_ 、 _XXX.txt_ 、 _XXX.exe_ 这些是都是文件。
 文件的本质是数据保存到存储介质的产物。
 Python 提供了 [open](https://docs.python.org/3.5/library/functions.html#open) 函数用于打开文件。
 open 函数打开一个文件，返回一个文件对象，文件对象提供基本的 read 、 write 、 close 方法来操作文件。

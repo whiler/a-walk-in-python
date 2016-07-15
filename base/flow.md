@@ -1,7 +1,7 @@
 ## 控制语句 ##
-控制语句是编程的逻辑基础，Python 中的控制语句有 _if_ , _for_ 和 _while_ 。
+控制语句是编程的逻辑基础，Python 中的控制语句有 if 、 for 和 while 。
 
-**Python 中，从 _:_ 开始，每一行代码用同样的缩进表示同一逻辑层。**
+**Python 中，从 : 开始，每一行代码用同样的缩进表示同一逻辑层。**
 
 ### if ###
 假如满足某项条件就执行某项操作。
@@ -93,5 +93,5 @@ while live:
     struggle
 ```
 
-_if_ , _for_ , _while_ 可以在复杂的逻辑控制中嵌套使用。
-在 _for_ 和 _while_ 循环中，可以用 _continue_ 提前结束一次循环，用 _break_ 终止所有的循环。
+if 、 for 和 while 可以在复杂的逻辑控制中嵌套使用。
+在 for 和 while 循环中，可以用 continue 提前结束一次循环，用 break 终止所有的循环。
