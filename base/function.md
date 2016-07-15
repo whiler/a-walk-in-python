@@ -41,6 +41,10 @@ y = f(5)
 例如，按照北京市出租车自 2013 年 6 月 10 日起执行的计费标准，计算出租车费用的函数：
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 def taxi(distance):
     extra ＝ 1.0
     starting = 13.0

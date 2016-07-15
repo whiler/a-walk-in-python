@@ -11,6 +11,10 @@ Python 从设计之初就是一门面向对象的语言，在 Python 中任何�
 从一个“人”的抽象类 Person 开始：
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 class Person(object):
     def __init__(self, name, age, gender):
         self.name = name

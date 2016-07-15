@@ -14,6 +14,10 @@ open 函数打开一个文件，返回一个文件对象，文件对象提供基
 文本文件的特点是文件内容全是字符，字符的顺序和数据的顺序一一对应。
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 poem = [
     "Love",
     "by Roy Croft",

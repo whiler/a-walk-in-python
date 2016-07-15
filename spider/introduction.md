@@ -91,6 +91,10 @@
 大致的代码逻辑：
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 def crawler(url):
     content = download(url)
     urls = extract_urls(content)

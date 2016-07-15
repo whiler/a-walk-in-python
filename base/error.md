@@ -15,6 +15,10 @@
 为了捕获这个除零错误我们可以这样做：
 
 ```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+
 try:
     4 / 0
 except ZeroDivisionError:
