@@ -42,7 +42,7 @@ Python 中，通过 class 关键字来定义一个类， Person 是类的名字�
 
 中“太极”一般的存在。
 
-```def init(self, name, age, gender)``` 这个函数定义了 Person 类的封装（构建）方法，通过 name ， age ， gender 来构建一个 Person 类的对象；
+```def __init__(self, name, age, gender)``` 这个函数定义了 Person 类的封装（构建）方法，通过 name ， age ， gender 来构建一个 Person 类的对象；
 
 ```def eat(self, food)``` 和 ```def drink(self, water)``` 分别定义了 Person 类的 eat 方法和 drink 方法；
 
@@ -91,7 +91,7 @@ zhang.wrok()
 ```
 class Engineer(Staff):
     def work(self):
-        print('create new BUG')
+        print('create new BUG~')
 
 zhang = Engineer('张三', 24, '男')
 zhang.wrok()
