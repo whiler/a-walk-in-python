@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# file: doit.py
+# file: spider.py
 # author: whiler
 # license: BSD
 
@@ -37,11 +37,13 @@ class Spider(object):
         定义一个 Spider 类，实现简单的网络爬虫
     """
 
-    def __init__(self, seeds):
+    def __init__(self, seeds, store):
         """
-            :seeds: 接受一个种子地址列表完成初始化
+            :seeds: 种子地址列
+            :store: 数据存储
         """
         self.seeds = seeds
+        self.store = store
 
         # 伪装成一个正常的浏览器，需要的请求头信息
         self.headers = {
@@ -72,7 +74,7 @@ class Spider(object):
         request = urllib.request.Request(url, headers=self.headers)
 
         # 默认读取到的内容为空
-        raw = ''
+        raw = b''
 
         # 开始捕获异常
         try:
@@ -220,21 +222,15 @@ class Spider(object):
             保存抓取得到的数据
             :locations: 从每一个网页抓取得到的区域字典
         """
-        # 遍历区域字典中每一对关联的区划代码和名称
-        for code, name in list(locations.items()):
-            msg = '[' + code + ']' + name
-
-            # 仅仅记录日志，并没有保存起来
-            logging.info(msg)
-        return 0
+        return self.store(locations)
 
     def filter(self, urls):
         """
             过滤链接地址
             :urls: 链接地址列表
         """
-        # 使用列表保存允许抓取的链接地址
-        allowed = list()
+        # 使用集合保存允许抓取的链接地址
+        allowed = set()
 
         # 遍历地址列表中的每一个地址
         for url in urls:
@@ -246,7 +242,7 @@ class Spider(object):
                 continue
             else:
                 # 将以 http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2014/ 开始，又没有访问过的地址，添加到允许访问的列表中
-                allowed.append(url)
+                allowed.add(url)
         return allowed
 
     def work(self):
@@ -291,15 +287,26 @@ class Spider(object):
             self.crawl(url)
 
 
-logging.info('begin')
+def store(locations):
+    """
+    保存解析得到的数据，仅仅打印出来。
+    """
+    for code, name in locations.items():
+        msg = '[' + code + ']:' + name
+        logging.debug(msg)
+    return 0
 
-# 种子地址列表
-seeds = ['http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2014/index.html']
 
-# 创建一个 Spider 对象
-spider = Spider(seeds)
+if '__main__' == __name__:
+    logging.info('begin')
 
-# 调用 spider 的 work 方法，开始抓取
-spider.work()
+    # 种子地址列表
+    seeds = ['http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2014/index.html']
 
-logging.info('finish')
+    # 创建一个 Spider 对象
+    spider = Spider(seeds, store)
+
+    # 调用 spider 的 work 方法，开始抓取
+    spider.work()
+
+    logging.info('finish')
