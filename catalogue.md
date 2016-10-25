@@ -1,32 +1,29 @@
 ## 目录 ##
 
-1. 序言
-2. 编程
-3. Python
-4. 基础
-	1. 数据类型
-		1. 整数
-		2. 实数
-		3. 布尔值
-		4. 字符串
-		5. 元组
-		6. 列表
-		7. 字典
-		8. 集合
-	2. 控制语句
-	3. 函数
-	4. 模块和包
-		1. 时间和日期
-			1. time
-			2. datetime
-		2. 正则表达式
-	5. 错误和异常
-5. 数据
-	1. 简单计算
-	2. 矩阵计算
-	3. 数理统计
-	4. SQLite
-6. 网络
-	1. WEB 请求
-	2. 爬虫
-	3. socket
+1. [序言](preface.md)
+2. [编程](programming.md)
+3. [Python](python.md)
+4. [基础](base/README.md)
+	1. [安装 Python](base/installation.md)
+	2. [注释](base/comment.md)
+	3. [规范](base/style.md)
+	4. [数据类型](base/datatype.md)
+	5. [控制语句](base/flow.md)
+	6. [函数](base/function.md)
+	7. [面向对象](base/object.md)
+	8. [模块和包](base/package.md)
+	9. [错误和异常](base/error.md)
+	10. [牛刀小试](base/doit.md)
+5. [网络爬虫](spider/README.md)
+	1. [简介](spider/introduction.md)
+	2. [HTTP](spider/http.md)
+	3. [HTML](spider/html.md)
+	4. [CSS Selector](spider/cssselector.md)
+	5. [牛刀小试](spider/doit.md)
+6. [数据存储](data/README.md)
+	1. [文件](data/file.md)
+	2. [csv 文件](data/csv.md)
+	3. [excel 文件](data/excel.md)
+	4. [sqlite 文件](data/sqlite.md)
+	5. [sql](data/sql.md)
+	6. [牛刀小试](data/doit.md)
